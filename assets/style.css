@@ -16,6 +16,7 @@ Blues/Purples - #6A33E9
 
 body {
     background-color: #FBF9FF;
+    
 }
     
    /* Header and Nav Section */
@@ -27,6 +28,7 @@ header {
     align-items: center;
     padding: 1%;
     background-color: #4A4756;
+    border-bottom:  2px solid #886EBD;
     
 }
 
@@ -69,42 +71,136 @@ nav a:hover {
 .hero {
     display: flex;
     height: 600px;
+    position: relative;
 }
 
 .hero-img {
     display: flex;
     flex-grow: 1;
+    opacity: 0.90;
+    
 
+}
+
+.hero-sub-heading {
+    position: absolute;
+    left: 1100px;
+    bottom: 60px;
+    background-color: #886EBD;
+    color: #F9F6FF;
+    font-size: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
 }
 
     /* About Me Section */
 
     .about-me {
         display: flex;
-        justify-content: baseline;
+       justify-content: center;
         padding-top: 64px;
-        padding-left: 24px;
-        border-top: 5px solid #4A4756;
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-bottom: 48px;
+        border-top: 5px solid #886EBD;
+        border-bottom: 1.5px solid #4A4756;
+      
     }
 
     .heading-about-me {
-        font-size: 32px;
-        color: #6A33E9;
+        font-size: 36px;
+        display: flex;
+        color: #886EBD;
         text-transform: uppercase;
         border-right: 3px solid #4A4756;
         padding: 24px;
+        text-decoration: underline;
 
     }
 
     .about-me-para {
         color: #4A4756;
     text-align: center;
+    display: flex;
+    justify-content: flex-end;
         font-size: 20px;
         line-height: 1.5;
-        display: flex;
-        justify-content: center;
-        padding-left: 48px;
+        
+           padding-left: 48px;
+           max-width: 1100px;
+      
         
     }
 
     /* Work Section */
+
+ .work {
+  display: inline-block;
+    padding: 24px;
+    border-bottom: 1.5px solid #4A4756;
+    width: auto;
+
+ }   
+
+.heading-work {
+    font-size: 36px;
+    color: #886EBD;
+    text-transform: uppercase;
+    border-right: 3px solid #4A4756;
+    padding: 24px 36px;
+    text-decoration: underline;
+}
+
+
+
+.work-img {
+    display: inline-block;
+    height: 500px;
+    width: 500px;
+    padding: 24px 24px 24px 24px
+}
+
+   
+ /* Contact Me Section */
+ 
+ .contact-me {
+    display: block;
+    padding: 24px;
+    border-top:  1.5px solid #4A4756;
+    min-height: 400px;
+    width: 100%;
+
+ }
+
+.heading-contact-me {
+    font-size: 36px;
+    color: #886EBD;
+    text-transform: uppercase;
+    border-right: 3px solid #4A4756;
+    padding: 24px 48px;
+    text-decoration: underline;
+}
+
+.contact-link {
+    display: inline-block;
+    font-size: 24px;
+   
+    color: #4A4756;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #886EBD;
+}
+
+.link-contacts {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 56px;
+}
+
+    /* Media Queries */
+
+    @media screen and (max-width) {
+        
+    }
