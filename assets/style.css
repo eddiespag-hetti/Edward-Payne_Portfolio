@@ -16,21 +16,32 @@ Blues/Purples - #6A33E9
 
 body {
     background-color: #FBF9FF;
-    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
+  
+.container {
+    display: flex;
+  
+   
+}    
+
+
     
    /* Header and Nav Section */
 
 header {
     display: flex;
-   
     justify-content: space-between;
     align-items: center;
     padding: 1%;
     background-color: #4A4756;
-    border-bottom:  2px solid #886EBD;
+    border-bottom:  5px solid #886EBD;
     
 }
+  
+   
 
 .header-main {
     font-weight: bold;
@@ -90,7 +101,8 @@ nav a:hover {
     color: #F9F6FF;
     font-size: 20px;
     padding: 10px;
-    flex-wrap: wrap;
+    border-radius: 5px;
+    
 }
 
     /* About Me Section */
@@ -98,6 +110,7 @@ nav a:hover {
     .about-me {
         display: flex;
        justify-content: center;
+       align-items: center;
         padding-top: 64px;
         padding-left: 48px;
         padding-right: 48px;
@@ -122,7 +135,7 @@ nav a:hover {
         color: #4A4756;
     text-align: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
         font-size: 20px;
         line-height: 1.5;
         
@@ -135,10 +148,14 @@ nav a:hover {
     /* Work Section */
 
  .work {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+ 
+
     padding: 24px;
     border-bottom: 1.5px solid #4A4756;
-    width: auto;
+  
+  
 
  }   
 
@@ -150,24 +167,66 @@ nav a:hover {
     padding: 24px 36px;
     text-decoration: underline;
 }
+.main-work-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
 
-
-
-.work-img {
-    display: inline-block;
-    height: 500px;
-    width: 500px;
-    padding: 24px 24px 24px 24px
 }
 
+.main-work-img::before {
+    content: 'GitHub';
+    background-color: #886EBD;
+    font-size: 18px;
+    color: #F9F6FF;
+    border-radius: 5px;
+    position: absolute;
+    top: 550px;
+    right: 565px;
+    padding: 22px;
+}
+
+.secondary-work-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.work-img-1 {
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+}
+
+.work-img {
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    padding: 24px 24px 24px 24px;
+   
+}
+
+.work-img::before {
+  
+        content: 'Take a Look!';
+        background-color: #886EBD;
+        font-size: 18px;
+        color: #F9F6FF;
+        border-radius: 5px;
+        position: absolute;
+        top: 550px;
+        right: 565px;
+        padding: 22px;
+}
    
  /* Contact Me Section */
  
  .contact-me {
-    display: block;
+    display: flex;
     padding: 24px;
     border-top:  1.5px solid #4A4756;
-    min-height: 400px;
+    min-height: 200px;
     width: 100%;
 
  }
@@ -182,19 +241,22 @@ nav a:hover {
 }
 
 .contact-link {
-    display: inline-block;
+    display: inline;
+   justify-content: space-between;
+   align-items: center;
     font-size: 24px;
-   
+   padding: 86px 36px 36px 36px;
     color: #4A4756;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .contact-link:hover {
     color: #886EBD;
+   
 }
 
 .link-contacts {
-    display: flex;
+
     justify-content: space-evenly;
     padding-top: 56px;
 }
