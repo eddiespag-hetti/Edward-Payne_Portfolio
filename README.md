@@ -13,7 +13,7 @@ N/A
 
 In able to use this application the user must enter the following web address into the preferred browser or hand-held device:
 
-https://eddiespag-hetti.github.io/Edward-Payne_Portfolio/
+
 
 
 
