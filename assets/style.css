@@ -24,6 +24,7 @@ header {
     text-transform: uppercase;
     font-size: 24px;
     color: azure;
+    padding-bottom: 24px;
 }
 
 .navigation {
@@ -35,7 +36,7 @@ header {
 .navigation ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .navigation li {
@@ -62,7 +63,7 @@ header {
 
 .hero-img {
     width: 100%;
-    height: 100%;
+    height: 500px;
     opacity: 0.8;
 }
 
@@ -82,7 +83,7 @@ header {
     color: #886EBD;
     text-transform: uppercase;
     font-size: 24px;
-    padding: 20px 0;
+    padding: 26px;
     text-decoration: underline;
 }
 
@@ -103,9 +104,15 @@ header {
 .work {
     text-align: center; 
     padding: 50px 0; 
-    background-color: #2cabfa20;
+    background-color: #89898920;
 }
 
+.para {
+font-size: 18px;
+font-style: italic;
+padding-bottom: 34px;
+
+}
 .content {
     padding: 0 20px;
 }
@@ -125,6 +132,38 @@ header {
     width: 100%;
     height: auto;
     max-width: 100%; /* This ensures the imgs don't exceed their container */
+}
+
+
+/* Contact Me */
+
+.contact-me {
+    padding: 50px 0; /* Adjust padding as needed */
+    background-color: rgba(195, 149, 247, 0.133); /* Adjust background color as needed */
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item {
+    margin-bottom: 20px; /* Adjust margin between contact items */
+}
+
+.contact-label {
+    font-weight: bold;
+    margin-right: 10px; /* Adjust spacing between label and link */
+}
+
+.contact-link {
+    color: #6A33E9; /* Adjust link color as needed */
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 

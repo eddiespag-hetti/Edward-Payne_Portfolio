@@ -1,4 +1,4 @@
-# <Online Portfolio - Edward Payne>
+# Online Portfolio - Edward Payne
 
 ## Description
 
