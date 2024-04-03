@@ -15,45 +15,58 @@ body {
 
 /* Header and Nav Section */
 header {
-    background-color: #4A4756;
-    padding: 1% 2%;
-}
-
-.header-main {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 24px;
-    color: azure;
-    padding-bottom: 24px;
-}
-
-.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    background-color: #4A4756;
+    border-bottom: 5px solid #886EBD;
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-main {
+    margin-bottom: 5px;
+}
+
+.student {
+    font-size: 14px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .navigation ul {
     list-style: none;
     display: flex;
-    align-items: flex-end;
 }
 
-.navigation li {
-    margin-right: 20px;
+.navigation ul li {
+    margin-left: 20px;
 }
 
-.navigation a {
-    color: #F9F6FF;
-    font-weight: bold;
-    font-size: 18px;
+.link-text {
+    color: #fff;
     text-decoration: none;
 }
 
-.navigation a:hover {
-    color: azure;
+.link-text:hover {
     text-decoration: underline;
 }
+
 
 /* Hero Section */
 .hero {
@@ -111,6 +124,7 @@ header {
 font-size: 18px;
 font-style: italic;
 padding-bottom: 34px;
+
 
 }
 .content {
